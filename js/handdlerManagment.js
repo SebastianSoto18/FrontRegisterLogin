@@ -7,6 +7,9 @@ var loginForm = document.getElementById("login-form");
 var registerButton = document.getElementById("register");
 var registerForm = document.getElementById("register-form");
 
+var loginUserInput = document.getElementById("user-input");
+var loginPasswordInput = document.getElementById("pass-input");
+
 
 loginButton.style.color = white;
 loginButton.style.backgroundColor = blue;
@@ -16,6 +19,8 @@ loginButton.addEventListener("click", function(){
     loginButton.style.backgroundColor = blue;
     registerButton.style.color = blue;
     registerButton.style.backgroundColor = white;
+    loginUserInput.value = "";
+    loginPasswordInput.value = "";
 
     registerForm.classList.add("animate__flipOutY");
     setTimeout(() => {

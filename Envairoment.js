@@ -1,8 +1,6 @@
-class Environment {
-    baseUrl= "https://www.google.com";
-    browser = "chrome";
-    username = "testuser_1";
-    password = "Test@123";
-}
+var Environment = {
+    apiRegistro : 'https://loginpartners.azurewebsites.net/api/Registrer',
+    apiLogin : 'https://loginpartners.azurewebsites.net/api/Login'
+};
 
 export default Environment;
