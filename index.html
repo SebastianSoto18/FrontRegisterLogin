@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/login.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+  <body>
+    <div class="login-register-form">
+        <div class="toggle-mode">
+            <a class="button-toggle-L" id="login"> Login </a>
+            <a class="button-toggle-R" id="register"> Registrarse </a>
+        </div>
+        <form id="login-form">
+            <input type="text" placeholder="user" required/>
+            <input type="password" placeholder="password" required/>
+            <button class="action-button" id="login-button-form">Entrar</button>
+        </form>
+
+        <form id="register-form">
+              <label for="nombres">Nombres:</label>
+              <input type="text" id="nombres" name="nombres" required>
+
+              <label for="apellidos">Apellidos:</label>
+              <input type="text" id="apellidos" name="apellidos" required>
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+
+
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required>
+
+
+              <label for="numeroIdentificacion">Número de identificación:</label>
+              <input type="text" id="numeroIdentificacion" name="numeroIdentificacion" required>
+
+
+              <label for="tipoIdentificacion">Tipo de identificación:</label>
+              <select id="tipoIdentificacion" name="tipoIdentificacion" required>
+                <option value="CC">Cédula de ciudadanía</option>
+                <option value="TI">Tarjeta de identidad</option>
+              </select>
+
+              <label for="nombreUser">Nombre de usuario:</label>
+              <input type="text" id="nombreUser" name="nombreUser" required>
+              <div id="buttonRegisterContainer">
+                  <button type="submit" value="Enviar" class="action-button">Registrarse</button>
+              </div>
+          </form>
+    </div>
+    <script src="./js/handdlerManagment.js"></script>
+  </body>
+</html>
